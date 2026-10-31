@@ -1,3 +1,7 @@
 {
-    "githubPullRequests.pullRequestDescription": "Copilot"
+    "githubPullRequests.pullRequestDescription": "Copilot",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.css-language-features",
+    "editor.formatOnPaste": false,
+    "editor.mouseWheelZoom": true
 }
