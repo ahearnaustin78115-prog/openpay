@@ -1,0 +1,14 @@
+flowchart TD
+    A[Customer starts checkout] --> B[Authenticate customer]
+    B --> C[Load order and amount from trusted server data]
+    C --> D{Choose payment method}
+    D -->|Visa card| E[Create hosted checkout session]
+    D -->|Cash App Pay| E
+    E --> F[Redirect customer to payment adapter]
+    F --> G{Customer completes payment?}
+    G -->|No| H[Return to checkout or cancel]
+    G -->|Yes| I[Payment provider sends webhook]
+    I --> J{Signature valid and event new?}
+    J -->|No| K[Reject event; do not fulfill order]
+    J -->|Yes| L[Update order from verified payment event]
+    L --> M[Fulfill order]

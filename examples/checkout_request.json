@@ -1,0 +1,7 @@
+{
+  "order_id": "order_123",
+  "amount_minor": 2599,
+  "currency": "USD",
+  "payment_method": "cash_app_pay",
+  "idempotency_key": "checkout_order_123_v1"
+}
