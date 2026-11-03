@@ -1,0 +1,7 @@
+<develocity>
+    <buildScan>
+        <publishing>
+            <onlyIf>false</onlyIf>
+        </publishing>
+    </buildScan>
+</develocity>
